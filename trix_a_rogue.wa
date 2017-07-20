@@ -1,0 +1,1349 @@
+{
+    "m": "d",
+    "s": "2.4.14",
+    "d": {
+        "expanded": false,
+        "id": "Trix's Ass Rogue",
+        "disjunctive": "all",
+        "regionType": "group",
+        "activeTriggerMode": -10,
+        "selfPoint": "BOTTOMLEFT",
+        "load": {
+            "difficulty": {
+                "multi": []
+            },
+            "faction": {
+                "multi": []
+            },
+            "class": {
+                "single": "ROGUE"
+            },
+            "talent": {
+                "multi": []
+            },
+            "race": {
+                "multi": []
+            },
+            "use_class": "true",
+            "role": {
+                "multi": []
+            },
+            "pvptalent": {
+                "multi": []
+            },
+            "talent2": {
+                "multi": []
+            }
+        },
+        "yOffset": 3.75,
+        "numTriggers": 1
+    },
+    "v": 1421,
+    "a": [],
+    "c": [
+        {
+            "yOffset": -98.749908447266,
+            "init_started": 1,
+            "color": [
+                0.25098039215686,
+                null,
+                0.070588235294118
+            ],
+            "xOffset": 1.2501220703125,
+            "regionType": "texture",
+            "animation": {
+                "main": {
+                    "type": "preset",
+                    "preset": "alphaPulse"
+                }
+            },
+            "activeTriggerMode": 0,
+            "init_completed": 1,
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "single": 16,
+                    "multi": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        true
+                    ]
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1,
+                    "multi": [
+                        true
+                    ]
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                },
+                "pvptalent": {
+                    "multi": []
+                }
+            },
+            "numTriggers": 1,
+            "id": "Poisons Missing",
+            "trigger": {
+                "inverse": true,
+                "ownOnly": true,
+                "names": [
+                    "Agonizing Poison",
+                    "Wound Poison",
+                    "Deadly Poison"
+                ],
+                "custom_hide": "timed",
+                "spellIds": [
+                    200802,
+                    8679,
+                    2823
+                ]
+            },
+            "texture": "Interface\\PVPFrame\\Icons\\PVP-Banner-Emblem-39"
+        },
+        {
+            "yOffset": -200,
+            "id": "Energy 2",
+            "regionType": "aurabar",
+            "activeTriggerMode": 0,
+            "selfPoint": "TOP",
+            "texture": "ElvUI Norm",
+            "init_started": 1,
+            "icon": false,
+            "numTriggers": 1,
+            "xOffset": 0.00018310546875,
+            "timerSize": 25,
+            "timer": false,
+            "text": false,
+            "timerFont": "TrashHand",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "stacks": false,
+            "init_completed": 1,
+            "fontFlags": "OUTLINE",
+            "barColor": [
+                null,
+                1
+            ],
+            "height": 13,
+            "trigger": {
+                "powertype": 3,
+                "custom_hide": "timed",
+                "event": "Power",
+                "type": "status",
+                "use_powertype": true,
+                "use_unit": true,
+                "unevent": "auto"
+            }
+        },
+        {
+            "yOffset": -200,
+            "width": 40,
+            "id": "Rupture Go",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "activeTriggerMode": 0,
+            "selfPoint": "BOTTOM",
+            "text1Font": "TrashHand",
+            "frameStrata": 4,
+            "xOffset": 60,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "talent2": {
+                    "multi": []
+                },
+                "pvptalent": {
+                    "multi": []
+                }
+            },
+            "numTriggers": 1,
+            "cooldown": true,
+            "untrigger": {
+                "spellName": 1943
+            },
+            "text1FontSize": 15,
+            "height": 40,
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showOnCooldown",
+                "spellName": 1943,
+                "custom_hide": "timed",
+                "event": "Action Usable",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "realSpellName": "Rupture"
+            }
+        },
+        {
+            "yOffset": -200,
+            "width": 40,
+            "id": "Rupture Re-Up",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "animation": {
+                "main": {
+                    "type": "preset",
+                    "preset": "bounce"
+                }
+            },
+            "activeTriggerMode": 0,
+            "selfPoint": "BOTTOM",
+            "numTriggers": 1,
+            "frameStrata": 2,
+            "init_started": 1,
+            "xOffset": 60,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "untrigger": {
+                "spellName": 1943
+            },
+            "cooldown": true,
+            "text1FontSize": 15,
+            "text1Font": "TrashHand",
+            "height": 40,
+            "trigger": {
+                "useRem": true,
+                "use_specific_unit": false,
+                "ownOnly": true,
+                "rem": "6",
+                "debuffType": "HARMFUL",
+                "realSpellName": "Rupture",
+                "unevent": "auto",
+                "spellName": 1943,
+                "use_spellName": true,
+                "remOperator": "<=",
+                "custom_hide": "timed",
+                "event": "Action Usable",
+                "names": [
+                    "Rupture"
+                ],
+                "showOn": "showOnCooldown",
+                "use_showOn": true,
+                "unit": "target"
+            }
+        },
+        {
+            "yOffset": -200,
+            "width": 7,
+            "orientation": "VERTICAL_INVERSE",
+            "id": "Rupture Dot",
+            "regionType": "aurabar",
+            "trigger": {
+                "unit": "target",
+                "names": [
+                    "Rupture"
+                ],
+                "custom_hide": "timed",
+                "debuffType": "HARMFUL",
+                "ownOnly": true
+            },
+            "fontFlags": "OUTLINE",
+            "textFont": "TrashHand",
+            "texture": "ElvUI Gloss",
+            "icon": false,
+            "timerSize": 15,
+            "xOffset": 83,
+            "numTriggers": 1,
+            "timer": false,
+            "text": false,
+            "timerFont": "TrashHand",
+            "textSize": 15,
+            "barColor": [
+                null,
+                0.42352941176471,
+                0.094117647058824
+            ],
+            "stacks": false,
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "selfPoint": "BOTTOM",
+            "height": 37,
+            "activeTriggerMode": 0
+        },
+        {
+            "yOffset": -200,
+            "width": 40,
+            "id": "Garrote Go",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "activeTriggerMode": 0,
+            "selfPoint": "BOTTOM",
+            "numTriggers": 1,
+            "frameStrata": 4,
+            "xOffset": -59.999206542969,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "text1Font": "TrashHand",
+            "cooldown": true,
+            "untrigger": {
+                "spellName": 703
+            },
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showOnCooldown",
+                "spellName": 703,
+                "custom_hide": "timed",
+                "event": "Action Usable",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "realSpellName": "Garrote"
+            },
+            "height": 40,
+            "text1FontSize": 15
+        },
+        {
+            "yOffset": -200,
+            "width": 40,
+            "desaturate": true,
+            "id": "Garrote CD",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "activeTriggerMode": 0,
+            "selfPoint": "BOTTOM",
+            "numTriggers": 1,
+            "frameStrata": 2,
+            "xOffset": -60,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "untrigger": {
+                "spellName": 703
+            },
+            "cooldown": true,
+            "text1FontSize": 15,
+            "text1Font": "TrashHand",
+            "height": 40,
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showOnCooldown",
+                "spellName": 703,
+                "custom_hide": "timed",
+                "event": "Cooldown Progress (Spell)",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "realSpellName": "Garrote"
+            }
+        },
+        {
+            "yOffset": -200,
+            "width": 40,
+            "id": "Garrote Re-Up",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "animation": {
+                "main": {
+                    "type": "preset",
+                    "preset": "bounce"
+                }
+            },
+            "activeTriggerMode": 0,
+            "selfPoint": "BOTTOM",
+            "text1Font": "TrashHand",
+            "frameStrata": 2,
+            "init_started": 1,
+            "xOffset": -60,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "numTriggers": 1,
+            "cooldown": true,
+            "untrigger": {
+                "spellName": 1943
+            },
+            "trigger": {
+                "useRem": true,
+                "unit": "target",
+                "rem": "4",
+                "showOn": "showOnCooldown",
+                "debuffType": "HARMFUL",
+                "use_spellName": true,
+                "realSpellName": "Rupture",
+                "spellName": 1943,
+                "use_specific_unit": false,
+                "remOperator": "<=",
+                "unevent": "auto",
+                "event": "Action Usable",
+                "names": [
+                    "Garrote"
+                ],
+                "ownOnly": true,
+                "use_showOn": true,
+                "custom_hide": "timed"
+            },
+            "height": 40,
+            "text1FontSize": 15
+        },
+        {
+            "yOffset": -200,
+            "width": 7,
+            "orientation": "VERTICAL_INVERSE",
+            "id": "Garrote Dot",
+            "regionType": "aurabar",
+            "trigger": {
+                "unit": "target",
+                "names": [
+                    "Garrote"
+                ],
+                "custom_hide": "timed",
+                "debuffType": "HARMFUL",
+                "ownOnly": true
+            },
+            "selfPoint": "BOTTOM",
+            "textFont": "TrashHand",
+            "texture": "ElvUI Gloss",
+            "icon": false,
+            "numTriggers": 1,
+            "xOffset": -83,
+            "timerSize": 15,
+            "timer": false,
+            "text": false,
+            "timerFont": "TrashHand",
+            "textSize": 15,
+            "fontFlags": "OUTLINE",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "barColor": [
+                null,
+                0.086274509803922,
+                0.082352941176471
+            ],
+            "stacks": false,
+            "height": 37,
+            "activeTriggerMode": 0
+        },
+        {
+            "yOffset": -200,
+            "width": 45,
+            "id": "Mutilate Go",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "animation": {
+                "main": {
+                    "preset": "alphaPulse"
+                }
+            },
+            "activeTriggerMode": 0,
+            "selfPoint": "BOTTOM",
+            "numTriggers": 1,
+            "xOffset": -20,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "text1Font": "TrashHand",
+            "cooldown": true,
+            "untrigger": {
+                "spellName": 1329
+            },
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showOnCooldown",
+                "spellName": 1329,
+                "custom_hide": "timed",
+                "event": "Action Usable",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "realSpellName": "Mutilate"
+            },
+            "height": 45,
+            "text1FontSize": 15
+        },
+        {
+            "yOffset": -200,
+            "width": 45,
+            "id": "Toxic Blade Go",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "animation": {
+                "main": {
+                    "type": "preset",
+                    "preset": "alphaPulse"
+                }
+            },
+            "activeTriggerMode": 0,
+            "selfPoint": "BOTTOM",
+            "numTriggers": 1,
+            "init_started": 1,
+            "xOffset": 20,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "text1Font": "TrashHand",
+            "cooldown": true,
+            "untrigger": {
+                "spellName": 245388
+            },
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showOnCooldown",
+                "spellName": 245388,
+                "custom_hide": "timed",
+                "event": "Action Usable",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "realSpellName": "Toxic Blade"
+            },
+            "height": 45,
+            "text1FontSize": 15
+        },
+        {
+            "yOffset": -200,
+            "width": 45,
+            "desaturate": true,
+            "id": "Toxic Blade CD",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "animation": {
+                "main": {
+                    "preset": "alphaPulse"
+                }
+            },
+            "activeTriggerMode": 0,
+            "selfPoint": "BOTTOM",
+            "numTriggers": 1,
+            "xOffset": 20,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "text1Font": "TrashHand",
+            "cooldown": true,
+            "untrigger": {
+                "spellName": 245388
+            },
+            "trigger": {
+                "custom_hide": "timed",
+                "showOn": "showOnCooldown",
+                "realSpellName": "Toxic Blade",
+                "spellName": 245388,
+                "event": "Cooldown Progress (Spell)",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "use_spellName": true
+            },
+            "height": 45,
+            "text1FontSize": 15
+        },
+        {
+            "yOffset": -200,
+            "width": 50,
+            "id": "Vendetta Go",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "animation": {
+                "main": {
+                    "type": "preset",
+                    "preset": "alphaPulse"
+                }
+            },
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showOnCooldown",
+                "spellName": 79140,
+                "custom_hide": "timed",
+                "event": "Action Usable",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "realSpellName": "Vendetta"
+            },
+            "numTriggers": 1,
+            "init_started": 1,
+            "xOffset": -120,
+            "glow": true,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "text1Font": "TrashHand",
+            "cooldown": true,
+            "untrigger": {
+                "spellName": 79140
+            },
+            "text1FontSize": 15,
+            "height": 50,
+            "activeTriggerMode": 0
+        },
+        {
+            "yOffset": -200,
+            "width": 50,
+            "desaturate": true,
+            "id": "Vendetta CD",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "animation": {
+                "main": {
+                    "preset": "alphaPulse"
+                }
+            },
+            "activeTriggerMode": 0,
+            "text1Font": "TrashHand",
+            "frameStrata": 2,
+            "xOffset": -120,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "talent2": {
+                    "multi": []
+                },
+                "pvptalent": {
+                    "multi": []
+                }
+            },
+            "numTriggers": 1,
+            "cooldown": true,
+            "text1FontSize": 20,
+            "untrigger": {
+                "spellName": 79140
+            },
+            "height": 50,
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showOnCooldown",
+                "spellName": 79140,
+                "custom_hide": "timed",
+                "event": "Cooldown Progress (Spell)",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "realSpellName": "Vendetta"
+            }
+        },
+        {
+            "yOffset": -200,
+            "width": 50,
+            "id": "Kingsbane Go",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "animation": {
+                "main": {
+                    "type": "preset",
+                    "preset": "alphaPulse"
+                }
+            },
+            "activeTriggerMode": 0,
+            "numTriggers": 1,
+            "init_started": 1,
+            "xOffset": 120,
+            "glow": true,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "talent2": {
+                    "multi": []
+                },
+                "pvptalent": {
+                    "multi": []
+                }
+            },
+            "text1Font": "TrashHand",
+            "cooldown": true,
+            "untrigger": {
+                "spellName": 192759
+            },
+            "text1FontSize": 15,
+            "height": 50,
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showOnCooldown",
+                "spellName": 192759,
+                "custom_hide": "timed",
+                "event": "Action Usable",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "realSpellName": "Kingsbane"
+            }
+        },
+        {
+            "yOffset": -200,
+            "width": 50,
+            "desaturate": true,
+            "id": "Kingsbane CD",
+            "text1Point": "CENTER",
+            "regionType": "icon",
+            "animation": {
+                "main": {
+                    "preset": "alphaPulse"
+                }
+            },
+            "activeTriggerMode": 0,
+            "numTriggers": 1,
+            "frameStrata": 2,
+            "xOffset": 120,
+            "text1": "%p",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "text1Font": "TrashHand",
+            "cooldown": true,
+            "untrigger": {
+                "spellName": 192759
+            },
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showOnCooldown",
+                "spellName": 192759,
+                "custom_hide": "timed",
+                "event": "Cooldown Progress (Spell)",
+                "type": "status",
+                "unevent": "auto",
+                "use_showOn": true,
+                "realSpellName": "Kingsbane"
+            },
+            "height": 50,
+            "text1FontSize": 20
+        },
+        {
+            "yOffset": -200,
+            "sameTexture": true,
+            "additional_triggers": [],
+            "regionType": "aurabar",
+            "compress": false,
+            "trigger": {
+                "use_spellName": true,
+                "showOn": "showAlways",
+                "spellName": 57330,
+                "use_unit": true,
+                "event": "Global Cooldown",
+                "type": "status",
+                "use_inverse": false,
+                "use_showOn": true,
+                "unevent": "auto"
+            },
+            "crop_y": 0.41,
+            "texture": "ElvUI Norm",
+            "backgroundOffset": 2,
+            "desaturateForeground": false,
+            "foregroundColor": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "sparkMirror": false,
+            "height": 1.5,
+            "rotation": 0,
+            "orientation": "HORIZONTAL_INVERSE",
+            "spark": true,
+            "activeTriggerMode": 0,
+            "disjunctive": "all",
+            "user_x": 0,
+            "backgroundColor": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "barColor": [
+                0
+            ],
+            "fontFlags": "OUTLINE",
+            "mirror": false,
+            "sparkWidth": 15,
+            "color": [],
+            "blendMode": "BLEND",
+            "numTriggers": 1,
+            "backgroundTexture": "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+            "sparkColor": [
+                0.027450980392157,
+                null,
+                0
+            ],
+            "icon": false,
+            "desaturateBackground": false,
+            "id": "GCD BAR",
+            "user_y": 0,
+            "timer": false,
+            "text": false,
+            "sparkHeight": 75,
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "use_combat": true,
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE",
+                    "multi": {
+                        "DEATHKNIGHT": true
+                    }
+                },
+                "talent": {
+                    "multi": []
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1,
+                    "multi": [
+                        null,
+                        null,
+                        true
+                    ]
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                },
+                "pvptalent": {
+                    "multi": []
+                }
+            },
+            "crop_x": 0.41,
+            "stacks": false,
+            "untrigger": {
+                "showOn": "showAlways",
+                "spellName": 57330
+            },
+            "foregroundTexture": "Textures\\SpellActivationOverlays\\Eclipse_Sun",
+            "width": 100.00001525879,
+            "rotateText": "LEFT"
+        },
+        {
+            "yOffset": -138.74981689453,
+            "width": 17.500024795532,
+            "id": "Mantle Proc",
+            "font": "TrashHand",
+            "regionType": "text",
+            "load": {
+                "difficulty": {
+                    "multi": []
+                },
+                "faction": {
+                    "multi": []
+                },
+                "use_spec": true,
+                "class": {
+                    "single": "ROGUE"
+                },
+                "talent": {
+                    "single": 17,
+                    "multi": [
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        null,
+                        true
+                    ]
+                },
+                "race": {
+                    "multi": []
+                },
+                "spec": {
+                    "single": 1
+                },
+                "use_class": true,
+                "role": {
+                    "multi": []
+                },
+                "pvptalent": {
+                    "multi": []
+                },
+                "talent2": {
+                    "multi": []
+                }
+            },
+            "activeTriggerMode": 0,
+            "color": [
+                null,
+                0.65882352941177,
+                0.50588235294118
+            ],
+            "numTriggers": 1,
+            "progressPrecision": 0,
+            "trigger": {
+                "names": [
+                    "Master Assassin's Initiative"
+                ],
+                "ownOnly": true,
+                "spellIds": [
+                    235027
+                ]
+            },
+            "height": 50.000007629395,
+            "fontSize": 50
+        }
+    ]
+}
